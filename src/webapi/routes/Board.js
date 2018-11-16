@@ -28,7 +28,7 @@ export default class Board {
 
     _processPut(req, res, next) {
         var board = {
-            name = req.body.name
+            name: req.body.name
         };
         this.boardService.add(board)
             .then(() => {

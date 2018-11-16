@@ -28,10 +28,10 @@ export default class Task {
 
     _processPut(req, res, next) {
         var task = {
-            name = req.body.name,
-            board = req.body.board,
-            column = req.body.column,
-            description = req.body.description
+            name: req.body.name,
+            board: req.body.board,
+            column: req.body.column,
+            description: req.body.description
         };
         this.taskService.add(task)
             .then(() => {
